@@ -34,10 +34,10 @@ fun main() {
         return calibrationValuesSum
     }
 
-    val partOneTestInput = readInput("Day01_1_test")
+    val partOneTestInput = readInput("Day01_test_1")
     check(part1(partOneTestInput) == 142)
 
-    val partTwoTestInput = readInput("Day01_2_test")
+    val partTwoTestInput = readInput("Day01_test_2")
     check(part2(partTwoTestInput) == 281)
 
     val input = readInput("Day01")
