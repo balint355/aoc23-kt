@@ -19,3 +19,12 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+/**
+ * Slices string limited to the end of the string.
+ */
+fun String.safeSlice(first: Int, last: Int): String {
+    val lastOrMaxIndex = if (last > this.length) this.length else last
+
+    return this.slice(first..<lastOrMaxIndex)
+}
